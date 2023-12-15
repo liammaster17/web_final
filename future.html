@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Bebas+Neue&family=Black+Ops+One&family=Notable&family=Old+Standard+TT:wght@700&family=Rubik+Bubbles&family=Rubik+Mono+One&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            position: relative;
+        }
+        .parallax {
+  position: relative;
+  perspective: 1px;
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax .parallax-layer {
+  padding: 100vh 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.base {
+  transform: translateZ(0);
+}
+
+.back {
+  transform: translateZ(-1px);
+}
+
+.further {
+    transform: translateZ(-3px); 
+}
+
+.base img{
+    width: 100%;
+}
+.back img{
+position: relative;
+left:400px;
+}
+.further img{
+position: relative;
+right:400px;
+}
+.future-poster{
+    width:100%;
+  
+}
+.future-poster img{
+width: 100%;
+
+}
+.navbar{
+   display: flex;
+justify-content: center;
+justify-content: space-evenly;}
+button{
+    background: linear-gradient(to bottom, #9b59b6, #8e44ad);
+    border-radius: 1500px;
+}
+button:hover{
+    background: linear-gradient(to bottom, #9b59b6, #8e44ad);
+    border-radius: 1500px;
+    color: #1c0426;
+}
+button a{
+    font-family:'rubik bubbles' ;
+text-decoration: none;
+}
+button a:hover{
+    font-family:'rubik bubbles' ;
+   
+text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="parallax">
+            <div class="parallax-layer base">
+            <img src="web_final_images/future.png">
+            </div>
+            <div class="parallax-layer back">
+            <img src="web_final_images/future-2.png">
+            </div>
+            
+              <div class="parallax-layer further">
+           <img src="web_final_images/future-3.png">
+            </div>
+          <div class="future-poster">
+            <img src="web_final_images/future-poster.webp">
+          </div>
+          </div>
+          
+          
+    </main>
+    <nav>
+        <div class="navbar">
+
+            <button><a href="index.html">Menu</Menu></a></button>
+
+            <button><a href="chaplin.html">20's</a></button>
+    
+            <button><a href="imagegallery.html">Mad Men</a></button>
+    
+            <button><a href="ad.html">Ads</a></button>
+    
+            <button><a href="mushroom.html">Mushroom</a></button>
+    
+          </div>
+    </nav>
+</body>
+</html>

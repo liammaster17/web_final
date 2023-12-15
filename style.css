@@ -1,0 +1,99 @@
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    45deg,
+    rgb(106, 88, 206),
+    rgba(2, 44, 69, 0.749),
+    rgb(92, 12, 126),
+    rgb(65, 5, 204)
+  );
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  font-family: "notable";
+  font-size: 150px;
+  color: black;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5),
+    1px -1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5),
+    1px 1px 0 white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.lab img{
+position: absolute;
+  height: 300px;
+  width:auto;
+  bottom: 0%;
+  right: 280px;
+}
+.navbar {
+  display: grid;
+  margin-right: 200px;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  gap: 300px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: rgb(193, 126, 159);
+  margin-left: 0px;
+  border-radius: 10px;
+  border-radius: 12px;
+  padding: 5px;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(
+    45deg,
+    rgb(25, 174, 164),
+    rgb(96, 85, 219),
+    #c757ff,
+    rgb(5, 43, 228)
+  );
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+button a {
+  font-family: "bebas neue";
+  color: black;
+  font-size: 80px;
+  text-decoration: none;
+  line-height: 30px;
+}
+button:hover {
+  background-color: rgb(161, 75, 81);
+  margin-left: 0px;
+  border-radius: 10px;
+  border-radius: 12px;
+  padding: 5px;
+  height: 290px;
+  width: 290px;
+  filter: drop-shadow(5px 10px 4px #070707);
+  background: linear-gradient(
+    45deg,
+    rgb(5, 43, 228),
+    #c757ff,
+    rgb(21, 0, 252),
+    rgb(25, 174, 164)
+  );
+}
+button a:hover {
+  font-family: "bebas neue";
+  color: black;
+  font-size: 80px;
+  text-decoration: none;
+  line-height: 30px;
+}

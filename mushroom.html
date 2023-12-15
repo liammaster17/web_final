@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      height: 100vh;
+      background-image: url("web_final_images/mushroom-1.png");
+      animation: move 5s ease-in-out infinite;
+      background-size: 100px;
+      background-repeat: repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    @keyframes move {
+      0%,
+      100% {
+        transform: translateY(100);
+      }
+      50% {
+        transform: translateY(-100px);
+      }
+    }
+    button {
+      background-color: rgba(255, 0, 0, 0.5);
+      border: 2px solid #ff0000;
+      border-radius: 100px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    button a {
+      font-size: 25px;
+      font-weight: bolder;
+      color: black;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <main></main>
+    <nav>
+      <div class="navbar">
+        <button><a href="index.html">Menu</a></button>
+
+        <button><a href="chaplin.html">20's</a></button>
+
+        <button><a href="imagegallery.html">Mad Men</a></button>
+
+        <button><a href="ad.html">Ads</a></button>
+
+        <button><a href="future.html">Future</a></button>
+      </div>
+    </nav>
+  </body>
+</html>

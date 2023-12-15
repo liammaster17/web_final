@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balthazar&family=Bebas+Neue&family=Black+Ops+One&family=Notable&family=Old+Standard+TT:wght@700&family=Rubik+Mono+One&family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(450deg, Black, white, grey, white, black);
+      }
+      .carousel-container {
+        position: relative;
+        width: 500px;
+        overflow: hidden;
+        margin: 20px auto;
+      }
+
+      .carousel {
+        display: flex;
+        margin-top: 25px;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel img {
+        width: 100%;
+        height: auto;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 0;
+        font-size: 25px;
+      }
+      .next {
+        right: 0;
+        font-size: 25px;
+      }
+      button {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      button a {
+        font-family: "bebas neue";
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="carousel-container">
+        <div class="carousel">
+          <img
+            src="web_final_images/madmen-1.jpg"
+            alt="Mad Men Poster Season One"
+          />
+          <img
+            src="web_final_images/madmen-3.jpg"
+            alt="Mad Men Poster Season Three"
+          />
+          <img
+            src="web_final_images/madmen-6.webp"
+            alt="Mad Men Poster Season Four"
+          />
+          <img
+            src="web_final_images/madmen-7.webp"
+            alt="Mad Men Poster Final Season"
+          />
+          <img
+            src="web_final_images/madmen-last.jpg"
+            alt="Mad Men Poster Golden Globe"
+          />
+        </div>
+        <div class="arrow prev" onclick="prevSlide()">☚</div>
+        <div class="arrow next" onclick="nextSlide()">☛</div>
+      </div>
+
+      <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+          const carousel = document.querySelector(".carousel");
+          const slideWidth =
+            document.querySelector(".carousel img").clientWidth;
+
+          currentIndex =
+            (index + carousel.childElementCount) % carousel.childElementCount;
+
+          carousel.style.transform = `translateX(-${
+            currentIndex * slideWidth
+          }px)`;
+        }
+
+        function nextSlide() {
+          showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+          showSlide(currentIndex - 1);
+        }
+      </script>
+    </main>
+    <nav>
+      <div class="navbar">
+        <button><a href="index.html">Menu</a></button>
+
+        <button><a href="chaplin.html">20's</a></button>
+
+        <button><a href="ad.html">Ads</a></button>
+
+        <button><a href="future.html">Future</a></button>
+
+        <button><a href="mushroom.html">Mushroom</a></button>
+      </div>
+    </nav>
+  </body>
+</html>
